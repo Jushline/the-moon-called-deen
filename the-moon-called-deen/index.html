@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#090f25">
+  <meta name="description" content="A little universe made with love for Deeeeeeeeeeeen, from Jushi.">
+  <title>The Moon Called Deen 🌙</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&family=Noto+Sans+Tamil:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="stars" aria-hidden="true"></div>
+  <header class="topbar">
+    <a class="brand" href="#home"><span>☾</span> The Moon Called Deen</a>
+    <div class="top-actions">
+      <div class="language-switch" aria-label="Choose language">
+        <button class="lang active" data-lang="en">EN</button>
+        <button class="lang" data-lang="ta">தமிழ்</button>
+        <button class="lang" data-lang="tl">Tanglish</button>
+      </div>
+      <button class="music-button" id="musicToggle" aria-label="Toggle background music">♫ <span>Music off</span></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero section" id="home">
+      <div class="moon-glow"></div>
+      <div class="hero-copy">
+        <p class="eyebrow" data-i18n="eyebrow">A LITTLE UNIVERSE, MADE WITH LOVE</p>
+        <h1 data-i18n="heroTitle">Hey, Deeeeeeeeeeeen. <span>My Mr. Moon.</span></h1>
+        <p class="hero-sub" data-i18n="heroSub">For the boy who deserves the whole universe.</p>
+        <p class="hero-note" data-i18n="heroNote">A small reminder for your brighter days, your cloudy days, and every day in between.</p>
+        <a class="primary-button" href="#letter" data-i18n="explore">Come inside ♡</a>
+      </div>
+      <div class="hero-art" aria-label="A glowing crescent moon">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="moon">☾</div>
+        <span class="spark s1">✦</span><span class="spark s2">✧</span><span class="spark s3">·</span><span class="spark s4">✦</span>
+        <span class="floating-heart">♡</span>
+      </div>
+      <div class="scroll-hint">SCROLL A LITTLE <span>↓</span></div>
+    </section>
+
+    <section class="envelope-wrap section" id="letter">
+      <div class="section-heading">
+        <p class="eyebrow">01 · A NOTE FROM JUSHI</p>
+        <h2 data-i18n="envelopeHeading">A little something for you</h2>
+        <p data-i18n="envelopeIntro">Open this whenever you need a reminder that someone is rooting for you.</p>
+      </div>
+      <button class="envelope" id="openLetter" aria-expanded="false">
+        <span class="envelope-stamp">♡</span><span class="envelope-flap"></span>
+        <span class="envelope-label" data-i18n="openEnvelope">Tap to open your letter</span>
+      </button>
+      <article class="letter-card hidden" id="letterCard">
+        <p class="letter-date">TO MY FAVOURITE HUMAN 🌙</p>
+        <h3 data-i18n="letterTitle">Dear Deeeeeeeeeeeen,</h3>
+        <div class="translated-copy" data-copy="letter"></div>
+        <p class="signature">With all my love,<br><strong>Jushi ❤️</strong></p>
+      </article>
+    </section>
+
+    <section class="section faith-section" id="faith">
+      <div class="section-heading">
+        <p class="eyebrow">02 · A LITTLE REMINDER</p>
+        <h2 data-i18n="faithHeading">Allah's plans are beautiful 🤍</h2>
+        <p data-i18n="faithIntro">For the days when you need patience, hope and a little more courage.</p>
+      </div>
+      <div class="verse-card">
+        <div class="verse-star">✧</div>
+        <p class="arabic" lang="ar" dir="rtl">فَإِنَّ مَعَ الْعُسْرِ يُسْرًا</p>
+        <h3 data-i18n="verseTranslation">“Indeed, with hardship comes ease.”</h3>
+        <p class="verse-ref">Qur’an · Surah Ash-Sharh 94:5</p>
+        <div class="thin-line"></div>
+        <p class="faith-message" data-copy="faith"></p>
+      </div>
+      <p class="small-note" data-i18n="faithFoot">Keep making dua. Keep taking your steps. Dua and effort can walk together.</p>
+    </section>
+
+    <section class="section moon-section" id="moon">
+      <div class="moon-photo"><img src="assets/beach.jpg" alt="Deen looking out towards the sea"></div>
+      <div class="moon-text">
+        <p class="eyebrow">03 · MY MR. MOON</p>
+        <h2 data-i18n="moonHeading">Why you'll always be my moon 🌙</h2>
+        <div class="translated-copy" data-copy="moon"></div>
+        <div class="moon-caption">“Even the moon has phases. You are allowed to have them too.”</div>
+      </div>
+    </section>
+
+    <section class="section poem-section" id="poem">
+      <div class="section-heading">
+        <p class="eyebrow">04 · WORDS FOR YOU</p>
+        <h2 data-i18n="poemHeading">A poem for my moon</h2>
+      </div>
+      <div class="poem-card">
+        <span class="poem-moon">☾</span>
+        <h3>My Mr. Moon</h3>
+        <div class="translated-copy poem-copy" data-copy="poem"></div>
+        <p class="poem-by">— Jushi</p>
+      </div>
+    </section>
+
+    <section class="section gym-section" id="gym">
+      <div class="section-heading">
+        <p class="eyebrow">05 · CLASSIFIED GYM REPORT</p>
+        <h2 data-i18n="gymHeading">Deen's Gym Kingdom 💪</h2>
+        <p data-i18n="gymIntro">An extremely serious investigation into those not-so-small biceps.</p>
+      </div>
+      <div class="gym-layout">
+        <div class="gym-photo"><img src="assets/bunny-mode.jpg" alt="Deen in his unexpectedly cute bunny-headband era"><span class="photo-tag">BUNNY MODE: UNLOCKED</span></div>
+        <div class="gym-report">
+          <div class="report-line"><span>Biceps</span><strong>1000/10 💪</strong></div>
+          <div class="report-line"><span>Gym dedication</span><strong>PRO MAX</strong></div>
+          <div class="report-line"><span>Heart</span><strong>Even bigger ❤️</strong></div>
+          <div class="report-line"><span>Emmadi </span><strong> evolo periya arms uhh</strong></div>
+          <div class="warning-note" data-i18n="gymJoke">Bro, those biceps can lift dumbbells. Now lift your confidence too. Job offer loading…</div>
+          <button class="fun-button" id="flexButton" data-i18n="flexButton">Check biceps power ⚡</button>
+          <p class="flex-result" id="flexResult" aria-live="polite"></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section gallery-section" id="gallery">
+      <div class="section-heading">
+        <p class="eyebrow">06 · THE DEEN ARCHIVES</p>
+        <h2 data-i18n="galleryHeading">A few frames of my favourite human 📸</h2>
+        <p data-i18n="galleryIntro">Different moods. Same favourite moon.</p>
+      </div>
+      <div class="gallery">
+        <figure class="gallery-item tall"><img src="assets/smile-green.jpg" alt="Deen smiling in a green sweatshirt"><figcaption>That smile. That's the post. ♡</figcaption></figure>
+        <figure class="gallery-item"><img src="assets/portrait-white.jpg" alt="Deen in a white T-shirt"><figcaption>Mr. Handsome, casually.</figcaption></figure>
+        <figure class="gallery-item"><img src="assets/flowers.jpg" alt="Deen holding pink flowers in front of his face"><figcaption>Flower boy era 🌷</figcaption></figure>
+        <figure class="gallery-item wide"><img src="assets/family.jpg" alt="Deen with his family"><figcaption data-i18n="familyCaption">The people who are always cheering for you. May you make many more beautiful memories together. 🤍</figcaption></figure>
+        <figure class="gallery-item"><img src="assets/snap-moon.jpg" alt="A monochrome candid photo of Deen"><figcaption>Moon in monochrome.</figcaption></figure>
+        <figure class="gallery-item"><img src="assets/beach.jpg" alt="Deen by the sea at sunset"><figcaption>Somewhere between the sky and the sea.</figcaption></figure>
+      </div>
+    </section>
+
+    <section class="section giggle-section" id="smile">
+      <div class="section-heading">
+        <p class="eyebrow">07 · EMERGENCY SMILE DEPARTMENT</p>
+        <h2 data-i18n="giggleHeading">Feeling low? Press here 😂</h2>
+        <p data-i18n="giggleIntro">Doctor Jushi has prescribed one dose of silliness.</p>
+      </div>
+      <div class="giggle-card">
+        <div class="giggle-emoji" id="giggleEmoji">🌙</div>
+        <p id="giggleMessage" aria-live="polite">Your future is loading… please do not switch off this handsome device.</p>
+        <button class="primary-button" id="giggleButton" data-i18n="giggleButton">Give me a smile ✨</button>
+      </div>
+      <div class="meme-row">
+        <img src="assets/monkey-meme.jpg" alt="Two funny little monkeys hugging">
+        <p data-i18n="memeCaption">When life gets dramatic, remember: even this duo is handling it one hug at a time. 😂</p>
+      </div>
+    </section>
+
+    <section class="section final-section" id="forever">
+      <div class="final-moon">☾</div>
+      <p class="eyebrow">08 · ONE LAST THING</p>
+      <h2 data-i18n="finalHeading">The world is still waiting to see you shine.</h2>
+      <div class="translated-copy final-copy" data-copy="final"></div>
+      <p class="forever">Jushi will always love you ❤️</p>
+      <p class="tiny-footer">MADE WITH LOVE, A LITTLE CHAOS & MANY MANY THOUGHTS · JUSHI ♡</p>
+    </section>
+  </main>
+
+  <audio id="backgroundMusic" loop preload="none">
+    <source src="assets/soft-instrumental.mp3" type="audio/mpeg">
+  </audio>
+  <button class="back-top" id="backTop" aria-label="Back to top">↑</button>
+  <script src="script.js"></script>
+</body>
+</html>
